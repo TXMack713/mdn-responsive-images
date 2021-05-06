@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MDN Responsive Images</title>
+</head>
+<body>
+<header>
+    <h1>MDN Responsive Images Practice</h1>
+</header>
+<main>
+    <article>
+        <h2>Practice using the <code>&ltimg&gt and &ltpicture&gt</code> elements</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cumque eaque et ex exercitationem facere
+            iusto omnis quasi quis! A alias, commodi eos incidunt maiores molestiae nam placeat possimus quae, qui
+            tempora vitae? Accusantium aliquid beatae, blanditiis cum esse est et molestiae obcaecati officiis placeat
+            sapiente ullam veniam vitae. Aperiam beatae culpa cumque deleniti dicta facilis fugit maiores, perferendis
+            quasi, repellendus similique voluptatibus! Architecto at cupiditate dignissimos dolor dolores doloribus
+            excepturi, facilis maxime molestias nesciunt repellendus totam unde veniam. A doloremque itaque odio ratione
+            ullam. Autem cupiditate, dolorem dolores doloribus ex exercitationem laboriosam laborum laudantium libero
+            nesciunt quidem quos soluta.</p>
+        <img srcset="images/pyramids-480.jpg 480w"
+             srcset="images/pyramids-800.jpg 800w"
+             srcset="images/pyramids-1280.jpg 1280w"
+             sizes="(max-width: 600px) 480px,
+                    (min-width: 800px) 800px,
+                    1280px"
+                src="images/pyramids-800.jpg" alt="Camel overlooking pyramids in the background">
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi commodi consectetur deleniti enim minima
+            numquam, quae quam quasi sed sequi temporibus totam voluptatem! Accusamus ad aperiam architecto aut culpa,
+            illo nobis provident quis reiciendis rem reprehenderit rerum saepe sed ullam, voluptates! Accusamus adipisci
+            beatae consequuntur ducimus eaque et eveniet fugit incidunt maiores, modi molestias nisi nobis officia
+            officiis optio perspiciatis recusandae repudiandae temporibus voluptas voluptate? Adipisci magni nulla
+            officia quae voluptate! Architecto beatae cupiditate dignissimos error maiores nemo nesciunt pariatur qui
+            quia, sed similique veniam. Cupiditate ipsam repudiandae sit soluta voluptate. Asperiores consectetur
+            ducimus earum eius excepturi, hic totam voluptate!</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="images/pyramids-480.jpg">
+            <source media="(min-width: 800px)" srcset="images/pyramids-800.jpg">
+            <source media="(min-width: 990px)" srcset="images/pyramids-1280.jpg">
+            <img src="./images/pyramids-800.jpg" alt="Camel overlooking pyramids in the background">
+        </picture>
+    </article>
+</main>
+</body>
+</html>
